@@ -6,7 +6,7 @@ TaotieData Console Machine — Open Source v0
 ├── /txts/   → text inputs
 ├── /mp3/    → imported audio (for matching)
 ├── /mp4/    → background videos
-
+''''
 /output/
 ├── /mp3/    → generated TTS files
 ├── /mp4/    → final videos
