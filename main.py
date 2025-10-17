@@ -12,8 +12,8 @@ def pause():
 def menu():
     while True:
         clear_screen()
-        print("=== 🧠 Taotie Sync & TTS (v1) ===")
-        print("[1] (.txt) → (.mp3")
+        print("TaotieData Content Console v0")
+        print("[1] (.txt) → (.mp3"))
         print("[2] Match (.mp4) duration to (.mp3)")
         print("[0] Exit")
 
@@ -24,15 +24,15 @@ def menu():
         elif choice == "2":
             run_video_match()
         elif choice == "0":
-            print("👋 Exiting. Have a great day!")
+            print("Exited.")
             break
         else:
-            print("❌ Invalid option.")
+            print("X")
             pause()
 
 def run_tts():
     clear_screen()
-    print("--- TTS(1000W) ---")
+    print("1000 word limit")
     txt_files = os.listdir("input/txts")
     if not txt_files:
         print("No .txt in input/txts/")
@@ -60,7 +60,7 @@ def run_video_match():
     mp3_files = os.listdir("input/mp3")
 
     if not mp4_files or not mp3_files:
-        print("⚠️ Missing input files in /input/mp4 or /input/mp3.")
+        print("Missing input files.")
         pause()
         return
 
