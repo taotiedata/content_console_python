@@ -1,17 +1,5 @@
 
 TaotieData Console Machine — Open Source v0
-### File Setup
-''''
-/input/
-├── /txts/   → text inputs
-├── /mp3/    → imported audio (for matching)
-├── /mp4/    → background videos
-''''
-/output/
-├── /mp3/    → generated TTS files
-├── /mp4/    → final videos
-└── logs.txt (optional)
-```
 
 ### 1. Convert Text → MP3
 ```bash
